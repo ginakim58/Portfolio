@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Run Bubble!</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/projects.css">
+</head>
+<body>
+  <header>
+    <h1>Portfolio</h1>
+    <nav>
+      <a href="../home.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../ps.html">Projects & Skills</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Run Bubble!</h1>
+    <p><strong>Description: </strong>
+      Run Bubble! is a 2D game targeted at Windows users, inspired by New Super Mario Bros. The objective is to defeat 
+      enemies, collect as many coins as possible, and reach the flag without dying or running out of time. Checkpoints 
+      allow the player to respawn if they die while battling enemies or navigating traps.
+    </p>
+    <p><strong>Technology: </strong>Unity, C#</p>
+    <p><strong>Challenges: </strong><br>
+      During the development of this game, I encountered a few challenges. One of the main issues was implementing a 
+      moving platform. I wanted the player to be able to stand on the platform and move with it, but initially, 
+      only the platform moved while the player kept falling off. After watching several tutorials, I learned that 
+      in order for the player to move with the platform, the player needed to become a child of the platform upon collision.
+      <br /><br />
+      Another challenge was adding hills and dips to the environment. I wanted the player to naturally move up and down with 
+      the terrain, but whenever the player encountered a hill or dip, they would fall off and end up behind the platform. 
+      To solve this, I added an invisible box collider beneath the player, allowing them to stay on top of the terrain and 
+      move smoothly over hills and dips.
+    </p>
+    <p><strong>Outcome: </strong>I was able to build and run the 2D platformer game successfully, without any issues.</p>
+    <video controls width="800" height="400">
+      <source src="RunBubble.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <button>
+      <a href="RunBubble.zip" download="RunBubble.zip" style="text-decoration: none; color: inherit;">Download the Game ↓</a>
+    </button>
+  </main>
+</body>
+</html>

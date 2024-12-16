@@ -1,0 +1,41 @@
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.left, .right {
+  flex: 1;
+  padding: 20px;
+}
+
+.contact h1 {
+  margin: 0px 0px 0px 50px;
+  font-size: 40px;
+}
+
+.contact-box {
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background: #0088ff;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+input[type="submit"]:hover {
+  background: rgb(188, 188, 188);
+}

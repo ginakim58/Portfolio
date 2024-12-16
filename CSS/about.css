@@ -1,0 +1,132 @@
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.left {
+  align-self: center;
+}
+
+.left img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 100%;
+}
+
+.right {
+  align-self: center;
+}
+
+.right h1 {
+  margin: 0;
+}
+
+.right h2 {
+  margin: 10px 0;
+  color: rgb(128, 128, 128);
+}
+
+.right p {
+  margin: 25px 0px 25px 0px;
+}
+
+.right button {
+  margin: 0;
+  padding: 10px 15px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.right button:hover {
+  background-color: rgb(188, 188, 188);
+}
+
+/* iPhone */
+@media (max-width: 500px) {
+  main {
+    flex-direction: column;
+    padding: 10px;
+    align-items: center; /* Center the content horizontally */
+  }
+
+  .left {
+    align-self: center;
+    margin-left: 0;
+    text-align: center; /* Center the text */
+  }
+
+  .left img {
+    width: 120px; /* Adjust size for smaller screens */
+    height: 120px;
+    margin: 0 auto; /* Center the image */
+  }
+
+  .right {
+    align-self: flex-start;
+    margin-left: 0;
+    text-align: center; /* Center the text */
+  }
+
+  .right h1 {
+    font-size: 28px;
+  }
+
+  .right h2 {
+    font-size: 18px;
+  }
+
+  .right p {
+    margin: 15px 0;
+  }
+
+  .right button {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 501px) and (max-width: 1024px) {
+  main {
+    flex-direction: row;
+    padding: 15px;
+  }
+
+  .left {
+    align-self: center;
+    margin-left: 40px;
+  }
+
+  .right {
+    align-self: center;
+    margin-left: 40px;
+  }
+
+  .left img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .right h1 {
+    font-size: 36px;
+  }
+
+  .right h2 {
+    font-size: 22px;
+  }
+
+  .right p {
+    margin: 20px 0;
+  }
+
+  .right button {
+    padding: 10px 14px;
+    font-size: 17px;
+  }
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Grotesk:wght@300..700&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+
+h1 {
+  margin: 0;
+  font-size: 59px;
+}
+
+nav {
+  display: flex;
+  gap: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  padding: 0 10px;
+}
+
+nav a:not(:last-child)::after {
+  content: '|';
+  padding-left: 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* iPhone */
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 501px) and (max-width: 1024px) {
+  header {
+    flex-direction: row;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+
+  nav a {
+    font-size: 16px;
+    padding: 0 12px;
+  }
+}

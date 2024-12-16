@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reverse Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/projects.css">
+</head>
+<body>
+  <header>
+    <h1>Portfolio</h1>
+    <nav>
+      <a href="../home.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../ps.html">Projects & Skills</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Reverse Tic-Tac-Toe</h1>
+    <p><strong>Description: </strong>
+      Reverse Tic-Tac-Toe is a competitive game where humans play against an AI opponent. The AI employs 
+      the Alpha-Beta Pruning algorithm, enabling it to make strategic moves and frequently outmatch human players. 
+      It effectively guides opponents into unfavorable positions while skillfully defending against potential threats.
+    </p>
+    <p><strong>Technology: </strong>Visual Studio Code, C++</p>
+    <p><strong>Challenges: </strong><br>
+      Implementing the alpha-beta pruning algorithm for the AI player was quite challenging. One drawback of the game is 
+      that the player almost always loses, as the AI, utilizing the alpha-beta pruning algorithm, counters the player's 
+      moves and guides them toward failure.
+      <br /><br />
+      In the future, I plan to expand the game grid to provide a greater challenge for both players and the AI. A larger grid 
+      would introduce additional complexity, requiring more advanced strategies for both offense and defense. I also aim to 
+      implement a random board generator, ensuring that each game begins with one move from the player and one from the AI 
+      already placed. This would add variety to the gameplay by creating unique starting configurations, making each game feel 
+      fresh and reducing repetition. Moreover, it could offer players more opportunities to win, helping them better understand 
+      the game’s mechanics and improve their decision-making skills.
+    </p>
+    <p><strong>Outcome: </strong>
+      At the start, I considered using either the Minimax Algorithm or the Alpha-Beta Pruning Algorithm. I chose Alpha-Beta 
+      Pruning because it’s more efficient. While Minimax evaluates every possible move, Alpha-Beta Pruning skips over 
+      unnecessary options, allowing it to achieve the same results faster. This makes Alpha-Beta Pruning a better choice, 
+      especially if I decide to improve the game later. It can look further ahead in the game within the same amount of time, 
+      helping it make smarter decisions in more complex situations. With this approach, the Reverse Tic-Tac-Toe AI played 
+      very well, making smart moves and defending effectively against the player. Overall, the implementation was successful, 
+      and the AI consistently performed better than human players.
+    </p>
+    <video controls width="800" height="400">
+      <source src="Screen Recording.mov" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <button>
+      <a href="ReverseTTT.zip" download="ReverseTTT.zip" style="text-decoration: none; color: inherit;">Download the Game ↓</a>
+    </button>
+  </main>
+</body>
+</html>
